@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcuit icon" href="../Media/LogoVerde.png">
+    <title>Acatraz Bar/ Contacto</title>
+    <!-- Contacto -->
+    <link rel="stylesheet" href="../css/styles.css">
+    
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <nav class="menu">
+        <p>ACATRAZ BAR</p>
+        <!-- COMIENZO DE LISTA Y ENLACES RELATIVOS-->
+        <ul>
+            <li><a href="../index.html"><strong>INICIO</strong></li></a>
+            <li><a href="historia.html"><strong>HISTORIA</strong></li></a>
+            <li><a href="servicios.html"><strong>SERVICIOS</strong></li></a>
+            <li><a href="reservas.html" target="_blank"><strong>RESERVAS</strong></li></a> <!-- SOLAMENTE EN RESERVAS IREMOS HACIA UNA NUEVA PESTANA -->
+            <li><a href="contacto.html"><strong>CONTACTO</strong></li></a>
+
+        </ul>
+        <!-- FIN DE LISTA -->
+    </nav>
+
+    <section>
+
+    </section>
+
+    <aside>
+        <!-- INICIO FORMULARIO -->
+        <form action="" method="get" enctype="multipart/form-data">
+
+            <fieldset style="color: #007F79">
+                <legend> <strong> Informacion de Contacto</strong></legend> <!-- TITULO DEL FORMULARIO -->
+
+                <br>
+
+                <!-- INICIO CAMPO NOMBRE / TEXTO-->
+                <label for="Nombre"> <strong>Nombre:</strong> </label>
+                <input type="text" name="Nombre" placeholder="Completa tu Nombre"> 
+                <!-- FIN CAMPO NOMBRE -->
+
+                <!-- INICIO CAMPO APELLIDO / TEXTO -->
+                <label for="Apellido"> <strong>Apellido:</strong> </label>
+                <input type="text" name="Apellido" placeholder="Completa tu Apellido">
+                <!-- FIN CAMPO APELLIDO / TEXTO -->
+
+                <br>
+                <br>
+
+                <!-- INICIO CAMPO MAIL / TEXTO -->
+                <label for="mail"> <strong>E-Mail:</strong></label>
+                <input type="email" name="mail">
+                <!-- FIN CAMPO MAIL / TEXTO -->
+
+                <br>
+                <br>
+
+                <!-- INICIO CAMPO SEXO / RADIO -->
+                <label for="sexo"><strong>Sexo:</strong></label>
+
+                <label for="hombre"><strong>Hombre</strong></label>
+                <input type="radio" name="sexo" value="hombre" id="hombre">
+
+                <label for="mujer"> <strong>Mujer</strong></label>
+                <input type="radio" name="sexo" value="mujer" id="mujer">
+                <!-- FIN CAMPO SEXO / RADIO-->
+
+                <br>
+                <br>
+
+                <!-- INICIO CAMPO MOTIVO / MENU DESPLEGABLE -->
+                <label for="motivo"> <strong> Motivo de Contacto</strong></label>
+                <select name="motivo" id="motivo">
+                    <option value="Consultas">Consultas</option>
+                    <option value="Reservas">Reservas</option>
+                    <option value="Otros">Otros</option>
+                </select>
+                <!-- FIN CAMPO MOTIVO / MENU DESPLEGABLE -->
+
+                <br>
+                <br>
+
+                <!-- INICIO BOTON COMENTARIO / TEXTO EN PARRAFO-->
+                <label for="comentario"> <strong>Comentario:</strong></label>
+                <br>
+                <textarea name="comentario" id="comentario" cols="30" rows="10" style="background-color: lightgray" >Estimados, estoy buscando información acerca de:</textarea>
+                <!-- FIN BOTON COMENTARIO / TEXTO EN PARRAFO-->
+
+                <br>
+                <br>
+
+                <!-- INICIO CAMPO PROMOCIONES / CHECKBOX -->
+                <label> <strong> Desea recibir promociones via mail? </strong></label>
+                <input type="checkbox" name="acepta" value="1" >
+                <!-- FIN CAMPO PROMOCIONES / CHECKBOX -->
+                
+                <br>
+                <br>
+
+                <!-- INICIO BOTON ENVIAR Y LIMPIAR -->
+                <input type="reset" value="Limpiar Formulario">
+                <input type="submit" value="Enviar Formulario">
+                <!-- FIN BOTON ENVIAR Y LIMPIAR -->
+
+            </fieldset>
+
+        </form>
+        <!-- FIN FORMULARIO -->
+
+    </aside>
+
+    <footer class="piePagina">
+        <div> <strong>ACATRAZ BAR</strong>
+        </div>
+
+        <div> 
+            <h3><strong>SECCIONES</strong> </h3>
+            <ul>
+                <li>HISTORIA</li>
+                <li>RESERVAS</li>
+                <li>SERVICIOS</li>
+            </ul>
+        </div>
+
+        <div> 
+            <h3><strong>MEDIOS DE PAGO</strong></h3>
+            <ul>
+                <li>VISA</li>
+                <li>AMERICAN EXPRESS</li>
+                <li>MERCADO PAGO</li>
+            </ul>
+        </div>
+
+        <div> 
+            <h3><strong>CONTACTO</strong></h3>
+            <ul>
+                <li> INSTAGRAM </li>
+                <li> TWITTER </li>
+                <li> FACEBOOK </li>
+            </ul>
+        </div>
+
+        <div> Lorem ipsum dolor sit amet. 
+        </div>
+<!-- FIN DE FOOTER -->
+    </footer>
+
+</body>
+</html>
