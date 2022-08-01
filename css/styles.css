@@ -48,6 +48,7 @@
 
 .menu a:hover{
     color: #007F79;
+    font-size: 22px;
 }
 
 .menu p{
@@ -62,7 +63,14 @@
 .imagenDeFondo{
     background-image: url(https://images.unsplash.com/photo-1572116469696-31de0f17cc34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHB1YnN8ZW58MHx8MHx8&w=1000&q=80);
     background-position: center; 
+    filter: grayscale(0);
+    transition: all 2s;
 }
+.imagenDeFondo:hover{
+    filter: grayscale(100%);
+    transform: scale(0.95);
+}
+
 
 /*Mensaje en Pantalla delante del Background*/
 .imagenDeFondo p{
