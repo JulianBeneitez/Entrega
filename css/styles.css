@@ -16,48 +16,46 @@
     src: url('../Typography/Graduate-Regular.ttf');
 }
 
-/*INDICE COLOR Y ALINEACION*/
-.menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+/*MENU*/
+
+nav{
+    background-color: #242424;
+}
+.container-fluid{
     background-color: #242424;
 }
 
-.menu p{
+div .navbar-brand{
+    color: #E6E6E6;
     font-family: Abril;
     font-size: 30px;
-    color: white;
+    text-transform: uppercase;
 }
 
-.menu li{
-    margin-right: 30px;
-    display: inline-block;
-    font-size: 20px;
-    letter-spacing: 2px;
-    font-family: Abril;
-    font-size: 20px;
-    letter-spacing: 2px;
-}
-
-.menu a{
-    color: white;
-    text-decoration: none;
-}
-
-.menu a:hover{
+div .navbar-brand:hover{
     color: #007F79;
-    font-size: 22px;
+    transition: .4s;
 }
 
-.menu p{
-    border: solid #E6E6E6 5px;
-    padding-left: 30px;
-    padding-right: 30px;
-    border-bottom: solid #007F79 5px;
+.navbar-nav a{
+   font-family: Graduate;
+   color: #E6E6E6;
+   border-radius: 7px;
+   letter-spacing: 2px;
+   margin-left: 10px;
 }
 
+.navbar-nav a:hover{
+    background-color: #E6E6E6;
+    border-radius: 7px;
+    font-weight: bold;
+    color: #007F79;
+    transition: .2s;
+}
+div .navbar-toggler, div .navbar-toggler-icon{
+    color: #007F79;
+    background-color: #E6E6E6;
+}
 
 /*Background*/
 .imagenDeFondo{
@@ -96,47 +94,78 @@
 
 
 /*FOOTER*/
-
-.piePagina{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row-reverse;
+footer{
+    width: 100%;
+    position: absolute;
     background-color: #007F79;
-    height: 100px;
-    margin-top: 5%;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
-.piePagina div{
+
+.footer_logo{
+    height: 100px;
+    margin-bottom: 5px;
+}
+
+.contenedor_menu_footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contenedor_menu_footer{
+    list-style: none;
+    color: #E6E6E6;
+    font-size: 20px;
     font-family: Graduate;
+}
+
+.menu_footer{
+    margin: 5px 15px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: .4s;
+}
+
+.menu_footer a{
+    text-decoration: none;
     color: #E6E6E6;
 }
 
-.piePagina div ul{
-    list-style-type: none;
+.menu_footer:hover{
+    opacity: 1;
 }
 
-/*MEDIA QUERY*/
+/*PAGINA SERVICIOS*/
 
-@media screen and (max-width: 1024px){
-    .menu{
-        flex-direction: column;
-    }
-    .menu p{
-        font-size: 20px;
-    }
-    .menu li{
-        display: flex;
-        font-size: 15px;
-        justify-content: center;
-    }
-    .imagenDeFondo p{
-        font-size: 30px;
-        height: 500px;
-    }
-    .piePagina div{
-        font-size: 7px;
-    }
-    .historia{
-        flex-direction: column;
-    }
+.tragos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
+.tragos img{
+    width: 300px;
+    height: 340px;
+    margin-left: 10px;
+    filter: grayscale(100%);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.tragos img:hover{
+    filter: grayscale(0);
+    transition: .4s;
+}
+
+section div{
+    font-size: 25px;
+    font-family: Abril;
+    text-transform: uppercase;
+    color: #007F79;
+    display: flex;
+    justify-content: center;
+}
+
