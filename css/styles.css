@@ -17,14 +17,9 @@
 }
 
 /*MENU*/
-
-nav{
-    background-color: #242424;
+nav, .container-fluid{
+    background-image: url(https://i.pinimg.com/564x/39/ff/fc/39fffc56a657467cc24277b8dc4140eb.jpg);
 }
-.container-fluid{
-    background-color: #242424;
-}
-
 div .navbar-brand{
     color: #E6E6E6;
     font-family: Abril;
@@ -57,31 +52,56 @@ div .navbar-toggler, div .navbar-toggler-icon{
     background-color: #E6E6E6;
 }
 
-/*Background*/
-.imagenDeFondo{
-    background-image: url(https://images.unsplash.com/photo-1572116469696-31de0f17cc34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHB1YnN8ZW58MHx8MHx8&w=1000&q=80);
-    background-position: center; 
-    filter: grayscale(0);
-    transition: all 2s;
-}
-.imagenDeFondo:hover{
-    filter: grayscale(100%);
-    transform: scale(0.95);
-}
+/*INDEX Background*/
 
-
-/*Mensaje en Pantalla delante del Background*/
-.imagenDeFondo p{
-    color: #E6E6E6;
-    font-size: 70px;
-    font-family: Abril;
-    height: 700px;
+#section_index, #section_encabezado{
+    background-image: url(https://i.pinimg.com/564x/39/ff/fc/39fffc56a657467cc24277b8dc4140eb.jpg);
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 50px;
 }
 
-/*FORMATO DE PAGINA HISTORIA*/
+/*INDEX SECTION BIENVENIDA*/
+
+.section_bienvenida{
+    color: #E6E6E6;
+    font-family: Graduate;
+}
+
+.btn_reserva{
+    color: #E6E6E6;
+    background-color: #007F79;
+    font-size: 20px;
+    border-radius: 7px;
+    padding: 5px;
+    animation-name: efecto_btn_reserva;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-duration: 8s;
+    animation-delay: 1s;
+    text-transform: lowercase;
+}
+
+@keyframes efecto_btn_reserva{
+    0%{
+      background-color: #007F79;
+    }
+    100%{
+        background-color: #E6E6E6;
+        color: #007F79;
+    }
+}
+
+
+/*INDEX SECTION IMAGEN*/
+#carouselExampleCaptions{
+    width: 1000px;
+}
+
+
+/*PAGINA HISTORIA*/
 .historia{
     display: flex;
     justify-content: center;
@@ -97,7 +117,8 @@ div .navbar-toggler, div .navbar-toggler-icon{
 footer{
     width: 100%;
     position: absolute;
-    background-color: #007F79;
+    background-image: url(https://i.pinimg.com/564x/39/ff/fc/39fffc56a657467cc24277b8dc4140eb.jpg);
+    opacity: 0.9;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,23 +150,40 @@ footer{
     transition: .4s;
 }
 
+.menu_footer:hover{
+    opacity: 1;
+}
 .menu_footer a{
     text-decoration: none;
     color: #E6E6E6;
 }
 
-.menu_footer:hover{
-    opacity: 1;
+/*PAGINA SERVICIOS*/
+#section_servicios{
+    background-image: url(https://i.pinimg.com/564x/39/ff/fc/39fffc56a657467cc24277b8dc4140eb.jpg);
 }
 
-/*PAGINA SERVICIOS*/
+.menu_section_servicios, .menu_section_servicios li a {
+    list-style-type: none ;
+    display: flex;
+    flex-direction: row;
+    font-family: Graduate;
+    font-size: 18px;
+    color: #E6E6E6;
+    text-decoration: none;
+    margin-left: 15px;
+}
 
-.tragos{
+.menu_section_servicios li a:hover{
+    text-decoration: underline;
+}
+#tragos, #servicios, #juegos{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-.tragos img{
+
+#tragos img, #servicios img, #juegos img{
     width: 300px;
     height: 340px;
     margin-left: 10px;
@@ -155,17 +193,35 @@ footer{
     border-radius: 5px;
 }
 
-.tragos img:hover{
+#tragos img:hover, #servicios img:hover, #juegos img:hover {
     filter: grayscale(0);
     transition: .4s;
 }
 
-section div{
+#section_servicios div{
     font-size: 25px;
     font-family: Abril;
     text-transform: uppercase;
-    color: #007F79;
+    color: #E6E6E6;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    
 }
 
+#section_servicios div:hover{
+    color: #007F79;
+}
+
+/*Media query en SERVICIOS */
+@media screen and (max-width: 500px){
+    .menu_section_servicios{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0%;
+    }
+    .menu_section_servicios li a{
+        margin-left: 0%;
+        font-size: 15px;
+    }
+}
