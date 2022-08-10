@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import "variables";
+
+/*CREACION DE TIPOGRAFIA TITULOS*/
+@font-face{
+    font-family: "Abril" ;
+    src: url('../Typography/AbrilFatface-Regular.ttf');
+}
+
+/*CREACION DE TIPOGRAFIA TEXTO*/
+
+@font-face{
+    font-family: "Graduate";
+    src: url('../Typography/Graduate-Regular.ttf');
+}
+
+/*MENU*/
+@import "menu";
+
+/*INDEX Background*/
+
+#section_index, #section_encabezado{
+    background-image: url(https://i.pinimg.com/564x/39/ff/fc/39fffc56a657467cc24277b8dc4140eb.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+/*INDEX SECTION BIENVENIDA*/
+
+.section_bienvenida{
+    color: $colorBlanco;
+    font-family: Graduate;
+}
+
+.btn_reserva{
+    color: $colorBlanco;
+    background-color: $colorVerde;
+    font-size: 20px;
+    border-radius: 7px;
+    padding: 5px;
+    animation-name: efecto_btn_reserva;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-duration: 8s;
+    animation-delay: 1s;
+    text-transform: lowercase;
+}
+
+@keyframes efecto_btn_reserva{
+    0%{
+      background-color: $colorVerde;
+    }
+    100%{
+        background-color: $colorBlanco;
+        color: $colorVerde;
+    }
+}
+
+
+/*INDEX SECTION IMAGEN*/
+#carouselExampleCaptions{
+    width: 1000px;
+}
+
+
+/*PAGINA HISTORIA*/
+.historia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.relatoHistoria{
+    margin: 5%;
+    font-family: Graduate;
+}
+
+
+/*FOOTER*/
+footer{
+    width: 100%;
+    position: absolute;
+    background-image: url(https://i.pinimg.com/564x/39/ff/fc/39fffc56a657467cc24277b8dc4140eb.jpg);
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer_logo{
+    height: 100px;
+    margin-bottom: 5px;
+}
+
+.contenedor_menu_footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contenedor_menu_footer{
+    list-style: none;
+    color: $colorBlanco;
+    font-size: 20px;
+    font-family: Graduate;
+}
+
+.menu_footer{
+    margin: 5px 15px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: .4s;
+    &:hover{
+        opacity: 1;
+    }
+    a{
+        text-decoration: none;
+        color: $colorBlanco;
+    }
+}
+
+
+/*PAGINA SERVICIOS*/
+#section_servicios{
+    background-image: url(https://i.pinimg.com/564x/39/ff/fc/39fffc56a657467cc24277b8dc4140eb.jpg);
+}
+
+.menu_section_servicios, .menu_section_servicios li a {
+    list-style-type: none ;
+    display: flex;
+    flex-direction: row;
+    font-family: Graduate;
+    font-size: 18px;
+    color: $colorBlanco;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.menu_section_servicios li a:hover{
+    text-decoration: underline;
+}
+#tragos, #servicios, #juegos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#tragos img, #servicios img, #juegos img{
+    width: 300px;
+    height: 340px;
+    margin-left: 10px;
+    filter: grayscale(100%);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+#tragos img:hover, #servicios img:hover, #juegos img:hover {
+    filter: grayscale(0);
+    transition: .4s;
+}
+
+#section_servicios div{
+    font-size: 25px;
+    font-family: Abril;
+    text-transform: uppercase;
+    color: $colorBlanco;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+#section_servicios div:hover{
+    color: $colorVerde;
+}
+
+/*Media query en SERVICIOS */
+@media screen and (max-width: 500px){
+    .menu_section_servicios{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0%;
+    }
+    .menu_section_servicios li a{
+        margin-left: 0%;
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,36 @@
+nav{
+    background-image: url(https://i.pinimg.com/564x/39/ff/fc/39fffc56a657467cc24277b8dc4140eb.jpg);
+    div{
+        .navbar-brand{
+            color: $colorBlanco;
+            font-family: Abril;
+            font-size: 30px;
+            text-transform: uppercase;
+            &:hover{
+                color: $colorVerde;
+                transition: .4s;   
+            }
+        }
+    }
+    .navbar-nav{
+        a{
+            font-family: Graduate;
+            color: $colorBlanco;
+            border-radius: 7px;
+            letter-spacing: 2px;
+            margin-left: 10px;
+            &:hover{
+                background-color: $colorBlanco;
+                border-radius: 7px;
+                font-weight: bold;
+                color: #007F79;
+                transition: .2s;
+            }
+        }
+    }
+}
+
+div .navbar-toggler, div .navbar-toggler-icon{
+    color: $colorVerde;
+    background-color: $colorBlanco;
+}
