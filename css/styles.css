@@ -3,6 +3,7 @@
   padding: 0;
 }
 
+/*MAPA*/
 /*CREACION DE TIPOGRAFIA TITULOS*/
 @font-face {
   font-family: "Abril";
@@ -227,6 +228,18 @@ footer {
   }
   .menu_section_servicios li a {
     margin-left: 0%;
-    font-size: 15px;
+    font-size: 17px;
   }
+}
+/*PRACTICA MAPS*/
+.titulo1, #extra {
+  background-color: black;
+}
+
+.titulo2 {
+  background-color: black;
+}
+
+.titulo3 {
+  background-color: black;
 }/*# sourceMappingURL=styles.css.map */

@@ -191,6 +191,36 @@ footer{
     }
     .menu_section_servicios li a{
         margin-left: 0%;
-        font-size: 15px;
+        font-size: 17px;
+    }
+}
+
+/*PRACTICA MAPS*/
+@mixin fondoColor ($fondo){
+    background-color: $fondo;
+}
+@if $tituloEstilo == "si"{
+    @for $i from 1 through 3{
+    .titulo#{$i}{
+        background-color: map-get($mapaEstilo, $i);
+    }
+    }
+}
+@else if $tituloEstilo == "no"{
+    @each $numero,
+    $titulo in $mapaEstilo{
+        .titulo#{$numero}{
+            @include fondoColor (blue);
+        }
+    }
+}
+@else {
+    @for $i from 1 through 3{
+        .titulo#{$i}{
+    background-color: black;
+        }
+    }   
+    #extra {
+        @extend .titulo1;
     }
 }
