@@ -1,0 +1,63 @@
+/*PAGINA SERVICIOS*/
+.menu_section_servicios, .menu_section_servicios li a {
+    list-style-type: none ;
+    display: flex;
+    flex-direction: row;
+    font-family: Graduate;
+    font-size: 18px;
+    color: $colorBlanco;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.menu_section_servicios li a:hover{
+    text-decoration: underline;
+}
+#tragos, #servicios, #juegos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#tragos img, #servicios img, #juegos img{
+    width: 300px;
+    height: 340px;
+    margin-left: 10px;
+    filter: grayscale(100%);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+#tragos img:hover, #servicios img:hover, #juegos img:hover {
+    filter: grayscale(0);
+    transition: .4s;
+}
+
+#section_servicios div{
+    font-size: 25px;
+    font-family: Abril;
+    text-transform: uppercase;
+    color: $colorBlanco;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+#section_servicios div:hover{
+    color: $colorVerde;
+}
+
+/*Media query en SERVICIOS */
+@media screen and (max-width: 500px){
+    .menu_section_servicios{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0%;
+    }
+    .menu_section_servicios li a{
+        margin-left: 0%;
+        font-size: 17px;
+    }
+}

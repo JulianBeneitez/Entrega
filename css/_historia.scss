@@ -1,0 +1,22 @@
+/*PAGINA HISTORIA*/
+.historia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 400px;
+    img{
+        margin-right: 100px;
+    }
+
+}
+.relatoHistoria{
+    margin: 5%;
+    font-family: Graduate;
+    p{
+        color: $colorBlanco;
+        margin-top: 50px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+}

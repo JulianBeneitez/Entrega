@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcuit icon" href="../Media/LogoVerde.png">
     <meta name="description" content="Acatraz Bar es una cervecería con tragos de especialidad, un ambiente moderno y el lugar perfecto para disfrutar del Bowling, Pool y mucho mas..">
-    <meta name="keywords" content="BIRRERIA ALMAGRO JUEGOS, BIRRERIA ALMAGRO, BIRRERIA JUEGOS BOWLING, CERVECERIA JUEGOS POOL, CERVECERIA, BIRRA, TRAGOS ESPECIALIDAD, BAR CON JUEGOS, BAR CON BOWLING, BAR CON POOL, BAR EN ALMAGRO, COMER Y JUGAR ALMAGRO, FESTEJOS CON JUEGOS BAR, FESTEJOS CON CERVEZA, CERVEZA TIRADA ALAMGRO, CERVEZA TIRADA BAR "> 
+    <meta name="keywords" content="BIRRERIA ALMAGRO JUEGOS, BIRRERIA ALMAGRO, BIRRERIA JUEGOS BOWLING, CERVECERIA JUEGOS POOL, CERVECERIA, BIRRA, TRAGOS ESPECIALIDAD, BAR CON JUEGOS, BAR CON BOWLING, BAR CON POOL, BAR EN ALMAGRO, COMER Y JUGAR ALMAGRO, FESTEJOS CON JUEGOS BAR, FESTEJOS CON CERVEZA, CERVEZA TIRADA ALMAGRO, CERVEZA TIRADA BAR "> 
     <title>Contacto | Acatraz Bar</title>
     <!-- Contacto -->
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/5a0cabcf6d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/styles.css">
     <meta name\="viewport" content\="width=device-width, initial-scale=1.0">
 </head>
@@ -48,47 +49,33 @@
 
     <aside>
         <!-- INICIO FORMULARIO -->
+        <div class="formularioContacto">
         <form action="" method="get" enctype="multipart/form-data">
 
-            <fieldset style="color: #007F79">
-                <legend> <strong> Informacion de Contacto</strong></legend> <!-- TITULO DEL FORMULARIO -->
-
-                <br>
+            <fieldset>
+                <h1 class="contactoTitulo">Informacion de Contacto</h1> 
 
                 <!-- INICIO CAMPO NOMBRE / TEXTO-->
-                <label for="Nombre"> <strong>Nombre:</strong> </label>
-                <input type="text" name="Nombre" placeholder="Completa tu Nombre"> 
-                <!-- FIN CAMPO NOMBRE -->
+                <label for="Nombre"> <strong></strong> </label>
+                <input type="text" name="Nombre" placeholder="Nombre"> 
 
                 <!-- INICIO CAMPO APELLIDO / TEXTO -->
-                <label for="Apellido"> <strong>Apellido:</strong> </label>
-                <input type="text" name="Apellido" placeholder="Completa tu Apellido">
-                <!-- FIN CAMPO APELLIDO / TEXTO -->
-
-                <br>
-                <br>
+                <label for="Apellido"> <strong></strong> </label>
+                <input type="text" name="Apellido" placeholder="Apellido">
 
                 <!-- INICIO CAMPO MAIL / TEXTO -->
-                <label for="mail"> <strong>E-Mail:</strong></label>
-                <input type="email" name="mail">
-                <!-- FIN CAMPO MAIL / TEXTO -->
-
-                <br>
-                <br>
+                <label for="mail"> <strong></strong></label>
+                <input type="email" name="mail" placeholder="E-mail">
 
                 <!-- INICIO CAMPO SEXO / RADIO -->
-                <label for="sexo"><strong>Sexo:</strong></label>
-
+               
                 <label for="hombre"><strong>Hombre</strong></label>
                 <input type="radio" name="sexo" value="hombre" id="hombre">
 
                 <label for="mujer"> <strong>Mujer</strong></label>
                 <input type="radio" name="sexo" value="mujer" id="mujer">
-                <!-- FIN CAMPO SEXO / RADIO-->
-
-                <br>
-                <br>
-
+           
+                
                 <!-- INICIO CAMPO MOTIVO / MENU DESPLEGABLE -->
                 <label for="motivo"> <strong> Motivo de Contacto</strong></label>
                 <select name="motivo" id="motivo">
@@ -96,53 +83,40 @@
                     <option value="Reservas">Reservas</option>
                     <option value="Otros">Otros</option>
                 </select>
-                <!-- FIN CAMPO MOTIVO / MENU DESPLEGABLE -->
-
-                <br>
-                <br>
 
                 <!-- INICIO BOTON COMENTARIO / TEXTO EN PARRAFO-->
-                <label for="comentario"> <strong>Comentario:</strong></label>
-                <br>
-                <textarea name="comentario" id="comentario" cols="30" rows="10" style="background-color: lightgray" >Estimados, estoy buscando información acerca de:</textarea>
-                <!-- FIN BOTON COMENTARIO / TEXTO EN PARRAFO-->
-
-                <br>
-                <br>
+                <label for="comentario"></label>
+                <textarea name="comentario" id="comentario" cols="30" rows="10" >Estimados, estoy buscando información acerca de:</textarea>
 
                 <!-- INICIO CAMPO PROMOCIONES / CHECKBOX -->
                 <label> <strong> Desea recibir promociones via mail? </strong></label>
                 <input type="checkbox" name="acepta" value="1" >
-                <!-- FIN CAMPO PROMOCIONES / CHECKBOX -->
-                
-                <br>
-                <br>
+
 
                 <!-- INICIO BOTON ENVIAR Y LIMPIAR -->
-                <input type="reset" value="Limpiar Formulario">
-                <input type="submit" value="Enviar Formulario">
-                <!-- FIN BOTON ENVIAR Y LIMPIAR -->
+                <input type="reset" value="Limpiar Formulario" id="botonContacto">
+                <input type="submit" value="Enviar Formulario" id="botonContacto" >
 
             </fieldset>
-
         </form>
-        <!-- FIN FORMULARIO -->
-
-    </aside>
-
-    <footer>
-        <img src="../Media/LogoBlanco.png" alt="Logo Acatraz" class="footer_logo">
-        <div class="contenedor_redsocial">
-                <a href="#" class="redsocial"></a>
-                <a href="#" class="redsocial"></a>
-                <a href="#" class="redsocial"></a>
         </div>
+    </aside>
+    <footer>
+
+        <div class="contenedor_redsocial">
+          <a href="https://fontawesome.com/icons/whatsapp?s=brands"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://fontawesome.com/icons/square-whatsapp?s=brands"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://fontawesome.com/icons/whatsapp?s=brands"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    
         <ul class="contenedor_menu_footer">
-            <li class="menu_footer"><a href="historia.html">HISTORIA</li></a>
-            <li class="menu_footer"><a href="reservas.html">RESERVAS</li></a>
-            <li class="menu_footer"><a href="servicios.html">SERVICIOS</li></a>
+          <li class="menu_footer"><a href="historia.html">HISTORIA</li></a>
+          <li class="menu_footer"><a href="reservas.html">RESERVAS</li></a>
+          <li class="menu_footer"><a href="servicios.html">SERVICIOS</li></a>
         </ul>
-    </footer>
+    
+        <img src="../Media/LogoBlanco.png" alt="Logo Acatraz" class="footer_logo">
+      </footer>
 <!-- FIN DE FOOTER -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"

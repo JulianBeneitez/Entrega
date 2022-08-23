@@ -4,171 +4,104 @@
 }
 
 /*MAPA*/
-/*CREACION DE TIPOGRAFIA TITULOS*/
-@font-face {
-  font-family: "Abril";
-  src: url("../Typography/AbrilFatface-Regular.ttf");
+.formularioReserva {
+  width: 700px;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  color: #E6E6E6;
+  font-family: Graduate;
+  text-align: center;
 }
-/*CREACION DE TIPOGRAFIA TEXTO*/
-@font-face {
-  font-family: "Graduate";
-  src: url("../Typography/Graduate-Regular.ttf");
+.formularioReserva .reservaTitulo {
+  margin-bottom: 30px;
 }
-/*MENU*/
-nav {
-  background-image: url(https://i.pinimg.com/564x/39/ff/fc/39fffc56a657467cc24277b8dc4140eb.jpg);
+.formularioReserva input, .formularioReserva select, .formularioReserva #comentario {
+  width: 100%;
+  margin-bottom: 30px;
+  opacity: 0.8;
 }
-nav div .navbar-brand {
+.formularioReserva #comentario {
+  opacity: 0.5;
+}
+.formularioReserva .mensajeform {
+  font-family: Graduate;
+  color: red;
+  opacity: 0.9;
+  text-align: center;
+}
+.formularioReserva #botonReserva {
+  color: #007F79;
+  font-size: 20px;
+  font-family: Graduate;
+}
+.formularioReserva #botonReserva:hover {
+  background-color: #007F79;
+  color: #E6E6E6;
+  transition: 0.2s;
+}
+.formularioReserva .cantPersonas {
   color: #E6E6E6;
   font-family: Abril;
-  font-size: 30px;
   text-transform: uppercase;
 }
-nav div .navbar-brand:hover {
+.formularioReserva #personas {
   color: #007F79;
-  transition: 0.4s;
-}
-nav .navbar-nav a {
   font-family: Graduate;
-  color: #E6E6E6;
-  border-radius: 7px;
-  letter-spacing: 2px;
-  margin-left: 10px;
 }
-nav .navbar-nav a:hover {
-  background-color: #E6E6E6;
-  border-radius: 7px;
-  font-weight: bold;
+
+@media screen and (max-width: 740px) {
+  .formularioReserva {
+    width: 100%;
+  }
+}
+.formularioContacto {
+  width: 1000px;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  text-align: center;
+  color: #E6E6E6;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: Graduate;
+}
+.formularioContacto .contactoTitulo {
+  margin-bottom: 30px;
+}
+.formularioContacto input, .formularioContacto select, .formularioContacto #comentario {
+  width: 100%;
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+.formularioContacto #comentario {
+  opacity: 0.5;
+}
+.formularioContacto #botonContacto {
   color: #007F79;
+  font-size: 20px;
+  font-family: Graduate;
+}
+.formularioContacto #botonContacto:hover {
+  background-color: #007F79;
+  color: #E6E6E6;
   transition: 0.2s;
 }
 
-div .navbar-toggler, div .navbar-toggler-icon {
-  color: #007F79;
-  background-color: #E6E6E6;
-}
-
-/*INDEX Background*/
-#section_index, #section_encabezado {
-  background-image: url(https://i.pinimg.com/564x/39/ff/fc/39fffc56a657467cc24277b8dc4140eb.jpg);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding-bottom: 50px;
-}
-
-/*INDEX SECTION BIENVENIDA*/
-.section_bienvenida {
-  color: #E6E6E6;
-  font-family: Graduate;
-}
-
-.btn_reserva {
-  color: #E6E6E6;
-  background-color: #007F79;
-  font-size: 20px;
-  border-radius: 7px;
-  padding: 5px;
-  -webkit-animation-name: efecto_btn_reserva;
-          animation-name: efecto_btn_reserva;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -webkit-animation-duration: 8s;
-          animation-duration: 8s;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  text-transform: lowercase;
-}
-
-@-webkit-keyframes efecto_btn_reserva {
-  0% {
-    background-color: #007F79;
-  }
-  100% {
-    background-color: #E6E6E6;
-    color: #007F79;
+@media screen and (max-width: 740px) {
+  .formularioContacto {
+    width: 100%;
   }
 }
-
-@keyframes efecto_btn_reserva {
-  0% {
-    background-color: #007F79;
-  }
-  100% {
-    background-color: #E6E6E6;
-    color: #007F79;
-  }
-}
-/*INDEX SECTION IMAGEN*/
-#carouselExampleCaptions {
-  width: 1000px;
-}
-
-/*PAGINA HISTORIA*/
-.historia {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.relatoHistoria {
-  margin: 5%;
-  font-family: Graduate;
-}
-
-/*FOOTER*/
-footer {
-  width: 100%;
-  position: absolute;
-  background-image: url(https://i.pinimg.com/564x/39/ff/fc/39fffc56a657467cc24277b8dc4140eb.jpg);
-  opacity: 0.9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.footer_logo {
-  height: 100px;
-  margin-bottom: 5px;
-}
-
-.contenedor_menu_footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.contenedor_menu_footer {
-  list-style: none;
-  color: #E6E6E6;
-  font-size: 20px;
-  font-family: Graduate;
-}
-
-.menu_footer {
-  margin: 5px 15px;
-  cursor: pointer;
-  opacity: 0.7;
-  transition: 0.4s;
-}
-.menu_footer:hover {
-  opacity: 1;
-}
-.menu_footer a {
-  text-decoration: none;
-  color: #E6E6E6;
-}
-
 /*PAGINA SERVICIOS*/
-#section_servicios {
-  background-image: url(https://i.pinimg.com/564x/39/ff/fc/39fffc56a657467cc24277b8dc4140eb.jpg);
-}
-
 .menu_section_servicios, .menu_section_servicios li a {
   list-style-type: none;
   display: flex;
@@ -229,6 +162,223 @@ footer {
   .menu_section_servicios li a {
     margin-left: 0%;
     font-size: 17px;
+  }
+}
+/*PAGINA HISTORIA*/
+.historia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 400px;
+}
+.historia img {
+  margin-right: 100px;
+}
+
+.relatoHistoria {
+  margin: 5%;
+  font-family: Graduate;
+}
+.relatoHistoria p {
+  color: #E6E6E6;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+/*CREACION DE TIPOGRAFIA TITULOS*/
+@font-face {
+  font-family: "Abril";
+  src: url("../Typography/AbrilFatface-Regular.ttf");
+}
+/*CREACION DE TIPOGRAFIA TEXTO*/
+@font-face {
+  font-family: "Graduate";
+  src: url("../Typography/Graduate-Regular.ttf");
+}
+/*MENU*/
+nav {
+  background-image: url(https://i.pinimg.com/564x/39/ff/fc/39fffc56a657467cc24277b8dc4140eb.jpg);
+}
+nav div .navbar-brand {
+  color: #E6E6E6;
+  font-family: Abril;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+nav div .navbar-brand:hover {
+  color: #007F79;
+  transition: 0.4s;
+}
+nav .navbar-nav a {
+  font-family: Graduate;
+  color: #E6E6E6;
+  border-radius: 7px;
+  letter-spacing: 2px;
+  margin-left: 10px;
+}
+nav .navbar-nav a:hover {
+  background-color: #E6E6E6;
+  border-radius: 7px;
+  font-weight: bold;
+  color: #007F79;
+  transition: 0.2s;
+}
+
+div .navbar-toggler, div .navbar-toggler-icon {
+  color: #007F79;
+  background-color: #E6E6E6;
+}
+
+/*INDEX Background*/
+body {
+  background-image: url(https://i.pinimg.com/564x/39/ff/fc/39fffc56a657467cc24277b8dc4140eb.jpg);
+}
+
+#section_index, #section_encabezado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+/*INDEX SECTION BIENVENIDA*/
+.section_bienvenida {
+  color: #E6E6E6;
+  font-family: Graduate;
+}
+.section_bienvenida h1 {
+  margin-top: 30px;
+}
+.section_bienvenida h2 {
+  margin-top: 30px;
+}
+.section_bienvenida p {
+  margin: 130px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.btn_reserva {
+  color: #E6E6E6;
+  background-color: #007F79;
+  font-size: 20px;
+  border-radius: 7px;
+  padding: 5px;
+  -webkit-animation-name: efecto_btn_reserva;
+          animation-name: efecto_btn_reserva;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  text-transform: lowercase;
+}
+
+@-webkit-keyframes efecto_btn_reserva {
+  0% {
+    background-color: #007F79;
+  }
+  100% {
+    background-color: #E6E6E6;
+    color: #007F79;
+  }
+}
+
+@keyframes efecto_btn_reserva {
+  0% {
+    background-color: #007F79;
+  }
+  100% {
+    background-color: #E6E6E6;
+    color: #007F79;
+  }
+}
+/*INDEX SECTION IMAGEN*/
+.carousel-inner {
+  width: 500px;
+  height: 400px;
+}
+.carousel-inner img {
+  height: 400px;
+}
+
+@media screen and (max-width: 576px) {
+  .section_bienvenida p {
+    margin: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .carousel-inner {
+    width: 300px;
+    height: 200px;
+  }
+  .carousel-inner img {
+    height: 200px;
+  }
+}
+/*FOOTER*/
+footer {
+  width: 100%;
+  position: absolute;
+  opacity: 0.9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer_logo {
+  height: 100px;
+  position: absolute;
+  margin-left: 70vw;
+}
+
+.contenedor_menu_footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contenedor_menu_footer {
+  list-style: none;
+  color: #E6E6E6;
+  font-size: 20px;
+  font-family: Graduate;
+}
+
+footer {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.contenedor_redsocial {
+  font-size: 40px;
+}
+
+.menu_footer, .contenedor_redsocial {
+  margin: 5px 15px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.4s;
+}
+.menu_footer:hover, .contenedor_redsocial:hover {
+  opacity: 1;
+}
+.menu_footer a, .contenedor_redsocial a {
+  text-decoration: none;
+  color: #E6E6E6;
+}
+
+@media screen and (max-width: 1000px) {
+  .footer_logo {
+    position: relative;
+    margin-left: 0;
+    margin-bottom: 20px;
   }
 }
 /*PRACTICA MAPS*/

@@ -1,0 +1,43 @@
+.formularioContacto{
+    width: 1000px;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+    color: $colorBlanco;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: Graduate;
+
+    .contactoTitulo{
+        margin-bottom: 30px;
+        } 
+    input, select, #comentario{
+        width: 100%;
+        margin-bottom: 20px;
+        opacity: 0.8;
+        }
+        #comentario{
+            opacity: 0.5;
+        }
+    #botonContacto{
+        color: $colorVerde;
+        font-size: 20px;
+        font-family: Graduate;
+            &:hover{
+                background-color: $colorVerde;
+                color: $colorBlanco;
+                transition: .2s;
+            }
+    }
+}
+
+@media screen and (max-width: 740px){
+    .formularioContacto{
+        width: 100%;
+    }
+}

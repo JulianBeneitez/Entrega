@@ -1,0 +1,56 @@
+
+.formularioReserva{
+    width: 700px;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: $colorBlanco;
+    font-family: Graduate;
+    text-align: center;
+    .reservaTitulo{
+        margin-bottom: 30px;
+        } 
+    input, select, #comentario{
+        width: 100%;
+        margin-bottom: 30px;
+        opacity: 0.8;
+    }
+    #comentario{
+        opacity: 0.5;
+    }
+    .mensajeform{
+        font-family: Graduate;
+        color: red;
+        opacity: 0.9;
+        text-align: center;
+    }
+    #botonReserva{
+        color: $colorVerde;
+        font-size: 20px;
+        font-family: Graduate;
+            &:hover{
+                background-color: $colorVerde;
+                color: $colorBlanco;
+                transition: .2s;
+            }
+    }
+    .cantPersonas{
+        color: $colorBlanco;
+        font-family: Abril;
+        text-transform: uppercase;
+    }
+    #personas{
+        color: $colorVerde;
+        font-family: Graduate;
+    }
+}
+
+@media screen and (max-width: 740px){
+    .formularioReserva{
+        width: 100%;
+    }
+}

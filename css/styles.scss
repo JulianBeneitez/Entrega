@@ -4,6 +4,10 @@
 }
 
 @import "variables";
+@import "reservas";
+@import "contacto";
+@import "servicios";
+@import "historia";
 
 /*CREACION DE TIPOGRAFIA TITULOS*/
 @font-face{
@@ -23,8 +27,10 @@
 
 /*INDEX Background*/
 
-#section_index, #section_encabezado{
+body{
     background-image: url(https://i.pinimg.com/564x/39/ff/fc/39fffc56a657467cc24277b8dc4140eb.jpg);
+}
+#section_index, #section_encabezado{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,8 +43,18 @@
 .section_bienvenida{
     color: $colorBlanco;
     font-family: Graduate;
+    h1{
+        margin-top: 30px;
+    }
+    h2{
+        margin-top: 30px;
+    }
+    p{
+        margin: 130px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
 }
-
 .btn_reserva{
     color: $colorBlanco;
     background-color: $colorVerde;
@@ -65,28 +81,35 @@
 
 
 /*INDEX SECTION IMAGEN*/
-#carouselExampleCaptions{
-    width: 1000px;
+.carousel-inner{
+    width: 500px; 
+    height: 400px;
+    img{
+        height: 400px;
+    }
 }
 
-
-/*PAGINA HISTORIA*/
-.historia{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media screen and (max-width: 576px){
+    .section_bienvenida{
+        p{
+        margin: 50px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        }
+    }
+    .carousel-inner{
+        width: 300px; 
+        height: 200px;
+        img{
+            height: 200px;
+        }
+    }
 }
-.relatoHistoria{
-    margin: 5%;
-    font-family: Graduate;
-}
-
 
 /*FOOTER*/
 footer{
     width: 100%;
     position: absolute;
-    background-image: url(https://i.pinimg.com/564x/39/ff/fc/39fffc56a657467cc24277b8dc4140eb.jpg);
     opacity: 0.9;
     display: flex;
     justify-content: center;
@@ -96,7 +119,8 @@ footer{
 
 .footer_logo{
     height: 100px;
-    margin-bottom: 5px;
+    position: absolute;
+    margin-left: 70vw;
 }
 
 .contenedor_menu_footer{
@@ -112,7 +136,15 @@ footer{
     font-family: Graduate;
 }
 
-.menu_footer{
+footer{
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.contenedor_redsocial{
+    font-size: 40px;
+}
+
+.menu_footer, .contenedor_redsocial{
     margin: 5px 15px;
     cursor: pointer;
     opacity: 0.7;
@@ -126,72 +158,11 @@ footer{
     }
 }
 
-
-/*PAGINA SERVICIOS*/
-#section_servicios{
-    background-image: url(https://i.pinimg.com/564x/39/ff/fc/39fffc56a657467cc24277b8dc4140eb.jpg);
-}
-
-.menu_section_servicios, .menu_section_servicios li a {
-    list-style-type: none ;
-    display: flex;
-    flex-direction: row;
-    font-family: Graduate;
-    font-size: 18px;
-    color: $colorBlanco;
-    text-decoration: none;
-    margin-left: 15px;
-}
-
-.menu_section_servicios li a:hover{
-    text-decoration: underline;
-}
-#tragos, #servicios, #juegos{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-#tragos img, #servicios img, #juegos img{
-    width: 300px;
-    height: 340px;
-    margin-left: 10px;
-    filter: grayscale(100%);
-    margin-top: 15px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-}
-
-#tragos img:hover, #servicios img:hover, #juegos img:hover {
-    filter: grayscale(0);
-    transition: .4s;
-}
-
-#section_servicios div{
-    font-size: 25px;
-    font-family: Abril;
-    text-transform: uppercase;
-    color: $colorBlanco;
-    display: flex;
-    justify-content: space-evenly;
-    
-}
-
-#section_servicios div:hover{
-    color: $colorVerde;
-}
-
-/*Media query en SERVICIOS */
-@media screen and (max-width: 500px){
-    .menu_section_servicios{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-left: 0%;
-    }
-    .menu_section_servicios li a{
-        margin-left: 0%;
-        font-size: 17px;
+@media screen and (max-width:1000px) {
+    .footer_logo{
+        position: relative;
+        margin-left: 0;
+        margin-bottom: 20px;
     }
 }
 
@@ -224,3 +195,4 @@ footer{
         @extend .titulo1;
     }
 }
+
