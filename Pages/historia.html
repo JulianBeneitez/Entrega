@@ -11,8 +11,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/5a0cabcf6d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../animations/animate.min.css">
     <link rel="stylesheet" href="../css/styles.css">
+   
+
     <!-- Historia -->
+    <meta name\="viewport" content\="width=device-width, initial-scale=1.0">
+
 </head>
 <body>
         <!-- COMIENZO DE MENU-->
@@ -38,9 +43,22 @@
 
     <section class="historia">
         <article class="relatoHistoria">
-            <p>Acatraz Bar nació en el año 2016, como el sueño de dos hermanos de crear un lugar donde desarrollar un universo alredor de la cerveza. Desde producciones "de garage" hasta las más reconocidas del mundo, en las canillas de nuestros locales conviven una amplia variedad de cervezas tiradas, muchas de ellas premiadas mundialmente, junto a nuevas y creativas propuestas de cerveceros de todo el país. Acompañadas con un servicio gastronómico moderno y una arquitectura bien cervecera. Este combo genera en nuestros clientes experiencias únicas e inolvidables.</p>
+            <p class="wow animate__animated animate__fadeInDown">
+                <strong>ACATRAZ BAR</strong>
+            nació en el año 2016, como el sueño de dos hermanos de crear un lugar donde desarrollar un universo alredor de la cerveza. Desde producciones "de garage" hasta las más reconocidas del mundo, en las canillas de nuestros locales conviven una amplia variedad de cervezas tiradas, muchas de ellas
+            <strong>premiadas mundialmente</strong>, junto a nuevas y creativas propuestas de cerveceros de todo el país. Acompañadas con un servicio gastronómico moderno y una arquitectura bien cervecera. Este combo genera en nuestros clientes experiencias únicas e inolvidables.</p>
         </article>
-        <img class= "imagenHistoria" src="../Media/LogoVerde.png">
+    </section>
+    <section class="imagenHistoriaSection">
+        <img class= "imagenHistoria" src="../Media/LogoBlanco.png">
+    </section>
+
+    <section>
+        <article class="premio">
+            <p class="wow animate__animated animate__fadeInUpBig ">
+                <strong>PREMIADOS A LA MEJOR CERVEZA DEL 2021</strong>
+            </p>
+        </article>
     </section>
 
     <aside>
@@ -63,8 +81,16 @@
       </footer>
 <!-- FIN DE FOOTER -->
 
+
+<script src="../animations/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
 integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
 crossorigin="anonymous"></script>
+
+
 </body>
 </html>

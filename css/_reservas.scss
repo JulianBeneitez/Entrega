@@ -27,6 +27,9 @@
         color: red;
         opacity: 0.9;
         text-align: center;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+        animation-duration: 4s;
     }
     #botonReserva{
         color: $colorVerde;

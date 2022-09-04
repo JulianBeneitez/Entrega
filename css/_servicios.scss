@@ -19,6 +19,7 @@
     justify-content: space-evenly;
 }
 
+
 #tragos img, #servicios img, #juegos img{
     width: 300px;
     height: 340px;
@@ -27,6 +28,7 @@
     margin-top: 15px;
     margin-bottom: 15px;
     border-radius: 5px;
+    animation-delay: 0.15s;
 }
 
 #tragos img:hover, #servicios img:hover, #juegos img:hover {
@@ -49,7 +51,7 @@
 }
 
 /*Media query en SERVICIOS */
-@media screen and (max-width: 500px){
+@media screen and (max-width: 619px){
     .menu_section_servicios{
         display: flex;
         flex-direction: column;
@@ -60,4 +62,8 @@
         margin-left: 0%;
         font-size: 17px;
     }
+    #tragos img, #servicios img, #juegos img{
+        filter: grayscale(0);
+    }
+
 }

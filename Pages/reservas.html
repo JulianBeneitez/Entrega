@@ -13,8 +13,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/5a0cabcf6d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../animations/animate.min.css">
     <link rel="stylesheet" href="../css/styles.css">
-
+    <meta name\="viewport" content\="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg">
@@ -61,7 +62,7 @@
                  <label for="comentarioadic"> </label>
                  <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Comentarios de la Reserva" ></textarea>
                  <input type="button" value="ENVIAR" id="botonReserva">
-                 <p class="mensajeform">Las reservas solamente se realizan en el dia hasta las 21hs</p>
+                 <p class="mensajeform wow animate__animated animate__pulse">Las reservas solamente se realizan en el dia hasta las 21hs</p>
             </fieldset>
         </form>
         </div>
@@ -83,7 +84,13 @@
     
         <img src="../Media/LogoBlanco.png" alt="Logo Acatraz" class="footer_logo">
       </footer>
-<!-- FIN DE FOOTER --><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+<!-- FIN DE FOOTER -->
+<script src="../animations/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
 integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
 crossorigin="anonymous"></script>
 </body>

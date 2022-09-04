@@ -1,22 +1,77 @@
 /*PAGINA HISTORIA*/
-.historia{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 400px;
-    img{
-        margin-right: 100px;
-    }
 
+@font-face{
+    font-family: "alumni" ;
+    src: url('../Typography/AlumniSansCollegiateOne-Italic.ttf');
 }
+.historia{
+    margin-bottom: 150px;
+}
+
+.imagenHistoriaSection{
+    display: flex;
+    justify-content: flex-end;
+    img{
+    margin-right: 100px;
+    margin-bottom: 60px;
+    height: 200px;
+    animation-name: historiaAparecer;  
+    animation-duration: 5s;
+    }
+}
+
 .relatoHistoria{
     margin: 5%;
     font-family: Graduate;
     p{
         color: $colorBlanco;
-        margin-top: 50px;
+        font-size: x-large;
+        margin-top: 40px;
         margin-left: 100px;
         margin-right: 100px;
+        strong{
+            color: $colorVerde;
+        }
     }
+}
+.premio{
+    text-align: center;
+    p{
+        font-size: 40px;
+        font-family: alunmi;
+        animation-delay: 1s;
+        strong{
+            color: gold;
+            opacity: 0.9;
+        }
+    }
+}
 
+@keyframes historiaAparecer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .relatoHistoria{
+        p{
+            font-size: 15px;
+            margin-left: 50px;
+            margin-right: 50px;
+         }
+    }
+    .premio{
+        p{
+            font-size: 20px;
+        }
+    }
+    .imagenHistoriaSection{
+        img{
+            display: none;
+        }
+    }
 }

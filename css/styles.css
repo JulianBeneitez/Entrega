@@ -33,6 +33,12 @@
   color: red;
   opacity: 0.9;
   text-align: center;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
 }
 .formularioReserva #botonReserva {
   color: #007F79;
@@ -131,6 +137,8 @@
   margin-top: 15px;
   margin-bottom: 15px;
   border-radius: 5px;
+  -webkit-animation-delay: 0.15s;
+          animation-delay: 0.15s;
 }
 
 #tragos img:hover, #servicios img:hover, #juegos img:hover {
@@ -152,7 +160,7 @@
 }
 
 /*Media query en SERVICIOS */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 619px) {
   .menu_section_servicios {
     display: flex;
     flex-direction: column;
@@ -163,16 +171,31 @@
     margin-left: 0%;
     font-size: 17px;
   }
+  #tragos img, #servicios img, #juegos img {
+    filter: grayscale(0);
+  }
 }
 /*PAGINA HISTORIA*/
-.historia {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 400px;
+@font-face {
+  font-family: "alumni";
+  src: url("../Typography/AlumniSansCollegiateOne-Italic.ttf");
 }
-.historia img {
+.historia {
+  margin-bottom: 150px;
+}
+
+.imagenHistoriaSection {
+  display: flex;
+  justify-content: flex-end;
+}
+.imagenHistoriaSection img {
   margin-right: 100px;
+  margin-bottom: 60px;
+  height: 200px;
+  -webkit-animation-name: historiaAparecer;
+          animation-name: historiaAparecer;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
 }
 
 .relatoHistoria {
@@ -181,11 +204,59 @@
 }
 .relatoHistoria p {
   color: #E6E6E6;
-  margin-top: 50px;
+  font-size: x-large;
+  margin-top: 40px;
   margin-left: 100px;
   margin-right: 100px;
 }
+.relatoHistoria p strong {
+  color: #007F79;
+}
 
+.premio {
+  text-align: center;
+}
+.premio p {
+  font-size: 40px;
+  font-family: alunmi;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.premio p strong {
+  color: gold;
+  opacity: 0.9;
+}
+
+@-webkit-keyframes historiaAparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes historiaAparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 576px) {
+  .relatoHistoria p {
+    font-size: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .premio p {
+    font-size: 20px;
+  }
+  .imagenHistoriaSection img {
+    display: none;
+  }
+}
 /*CREACION DE TIPOGRAFIA TITULOS*/
 @font-face {
   font-family: "Abril";
