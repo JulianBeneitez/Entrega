@@ -8,18 +8,6 @@
     margin-bottom: 150px;
 }
 
-.imagenHistoriaSection{
-    display: flex;
-    justify-content: flex-end;
-    img{
-    margin-right: 100px;
-    margin-bottom: 60px;
-    height: 200px;
-    animation-name: historiaAparecer;  
-    animation-duration: 5s;
-    }
-}
-
 .relatoHistoria{
     margin: 5%;
     font-family: Graduate;
@@ -36,6 +24,7 @@
 }
 .premio{
     text-align: center;
+    margin-bottom: 300px;
     p{
         font-size: 40px;
         font-family: alunmi;
@@ -67,11 +56,6 @@
     .premio{
         p{
             font-size: 20px;
-        }
-    }
-    .imagenHistoriaSection{
-        img{
-            display: none;
         }
     }
 }

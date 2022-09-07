@@ -184,20 +184,6 @@
   margin-bottom: 150px;
 }
 
-.imagenHistoriaSection {
-  display: flex;
-  justify-content: flex-end;
-}
-.imagenHistoriaSection img {
-  margin-right: 100px;
-  margin-bottom: 60px;
-  height: 200px;
-  -webkit-animation-name: historiaAparecer;
-          animation-name: historiaAparecer;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-}
-
 .relatoHistoria {
   margin: 5%;
   font-family: Graduate;
@@ -215,6 +201,7 @@
 
 .premio {
   text-align: center;
+  margin-bottom: 300px;
 }
 .premio p {
   font-size: 40px;
@@ -252,9 +239,6 @@
   }
   .premio p {
     font-size: 20px;
-  }
-  .imagenHistoriaSection img {
-    display: none;
   }
 }
 /*CREACION DE TIPOGRAFIA TITULOS*/
